@@ -77,6 +77,12 @@ section{padding:80px 0}
 .card .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(124,92,255,.14);margin-bottom:18px;font-size:20px}
 .card h3{font-size:19px;margin-bottom:10px;letter-spacing:-.01em}
 .card p{color:var(--muted);font-size:15px}
+.industries{grid-template-columns:repeat(3,1fr)}
+.industries .card{padding:24px}
+.industries .card h3{font-size:17px}
+.industries .card p{font-size:14.5px}
+@media(max-width:900px){.industries{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.industries{grid-template-columns:1fr}}
 .steps{counter-reset:s}
 .step{position:relative;padding-left:82px}
 .step::before{counter-increment:s;content:counter(s,decimal-leading-zero);position:absolute;left:28px;top:26px;font-weight:800;font-size:26px;letter-spacing:-.03em;color:var(--accent);opacity:.9}
